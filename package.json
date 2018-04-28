@@ -12,15 +12,18 @@
     "test": "NODE_ENV=test jest"
   },
   "dependencies": {
+    "@material-ui/icons": "^1.0.0-beta.43",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "jss": "^9.8.1",
     "material-ui": "^1.0.0-beta.43",
     "next": "^5.1.0",
+    "nuka-carousel": "^4.1.0",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-jss": "^8.4.0"
+    "react-jss": "^8.4.0",
+    "validator": "^9.4.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
