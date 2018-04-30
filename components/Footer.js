@@ -1,15 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
+import { Block } from './';
+import { Typography } from 'material-ui';
 
-const styles = {
+const styles = ({ palette }) => ({
   container: {
-    flexGrow: 1,
+    flex: 1,
+    backgroundColor: console.log(palette) || palette.grey[200],
+    padding: '50px 0',
   },
-};
+});
 
 export function Footer({ classes }) {
-  return <div className={classes.container} />;
+  return (
+    <div className={classes.container}>
+      <Block>
+        <Typography variant="body1">We care about your privacy.</Typography>
+        <Typography variant="body1">
+          Copyright © 2017-2018{' '}
+          <a href="https://deeplearningtribe.com">Deep Learning Tribe</a>{' '}
+          david@deeplearningtribe.com
+        </Typography>
+      </Block>
+    </div>
+  );
 }
 
 Footer.propTypes = {
