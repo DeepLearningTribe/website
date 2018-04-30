@@ -28,8 +28,15 @@ class MyDocument extends Document {
           />
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Lato:300,400,900"
+            href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
           />
+          <style global jsx>
+            {`
+              img {
+                max-width: 100%;
+              }
+            `}
+          </style>
         </Head>
         <body>
           <Main />
