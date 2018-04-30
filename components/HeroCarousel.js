@@ -9,13 +9,13 @@ import Button from 'material-ui/Button';
 
 const styles = {
   container: {
-    height: 1000,
+    height: '80vh',
     background: `linear-gradient(rgba(0, 0, 80, 0.5), rgba(0, 0, 180, 0.5)),
       url("/static/images/coding.jpg") no-repeat center center`,
     backgroundSize: 'cover',
   },
   slide: {
-    height: 1000,
+    height: '80vh',
     position: 'relative',
     backgroundPosition: 'center',
     textAlign: 'left',
@@ -143,6 +143,7 @@ class HeroCarousel extends React.Component {
 
 HeroCarousel.propTypes = {
   classes: PropTypes.shape({
+    container: PropTypes.string.isRequired,
     slide: PropTypes.string.isRequired,
     slideImage: PropTypes.string.isRequired,
     slideText: PropTypes.string.isRequired,
@@ -150,6 +151,7 @@ HeroCarousel.propTypes = {
     slide2: PropTypes.string.isRequired,
     slide3: PropTypes.string.isRequired,
     slide4: PropTypes.string.isRequired,
+    ctaButton: PropTypes.string.isRequired,
   }).isRequired,
 };
 
