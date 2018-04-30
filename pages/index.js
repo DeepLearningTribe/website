@@ -6,7 +6,9 @@ import withRoot from '../src/withRoot';
 import { Newsletter, HeroCarousel, Navbar, Footer } from '../components';
 
 const styles = () => ({
-  container: {},
+  container: {
+    fontFamily: "'Lato', sans-serif",
+  },
 });
 
 class Index extends React.Component {
