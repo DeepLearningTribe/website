@@ -19,7 +19,7 @@ const styles = {
     position: 'relative',
     backgroundPosition: 'center',
     textAlign: 'left',
-    padding: '4rem 30% 1rem 10%',
+    padding: '4rem 40% 1rem 10%',
     color: 'white',
     fontSize: '2.2rem',
   },
@@ -40,7 +40,7 @@ const styles = {
       url("/static/images/group_coding.jpg") no-repeat center center`,
     backgroundSize: 'cover',
     textAlign: 'right',
-    padding: '4rem 5% 1rem 40%',
+    padding: '4rem 5% 1rem 50%',
   },
   slide3: {
     background: `linear-gradient(rgba(0, 0, 80, 0.5), rgba(0, 0, 180, 0.5)),
@@ -88,20 +88,25 @@ class HeroCarousel extends React.Component {
           )}
         >
           <div className={`${classes.slide} ${classes.slide1}`}>
-            <h1>Join us and start learning deep learning</h1>
-            <p>Get access to all our tutorials!</p>
+            <h1>Join us and start your deep learning journey</h1>
+            <p>
+              Our free membership provides access to all our tutorials, slack
+              channel and events for free!
+            </p>
             <Button
               className={classes.ctaButton}
               variant="raised"
               color="secondary"
               size="large"
             >
-              Join Us Now!
+              Join Us Now For Free!
             </Button>
           </div>
           <div className={`${classes.slide} ${classes.slide2}`}>
             <h1>We are here to help each other learn deep learning</h1>
-            <p>Get your custom portfolio page!</p>
+            <p>
+              Become a premium member and get your own custom portfolio page!
+            </p>
             <Button
               className={classes.ctaButton}
               variant="raised"
