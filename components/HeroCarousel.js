@@ -8,13 +8,20 @@ import { withStyles } from 'material-ui/styles';
 import Button from 'material-ui/Button';
 
 const styles = {
+  container: {
+    height: 1000,
+    background: `linear-gradient(rgba(0, 0, 80, 0.5), rgba(0, 0, 180, 0.5)),
+      url("/static/images/coding.jpg") no-repeat center center`,
+    backgroundSize: 'cover',
+  },
   slide: {
-    height: '800px',
+    height: 1000,
     position: 'relative',
     backgroundPosition: 'center',
     textAlign: 'left',
-    padding: 100,
+    padding: '4rem 30% 1rem 10%',
     color: 'white',
+    fontSize: '2.2rem',
   },
   slideImage: {
     position: 'absolute',
@@ -32,6 +39,8 @@ const styles = {
     background: `linear-gradient(rgba(0, 0, 80, 0.5), rgba(0, 0, 180, 0.5)),
       url("/static/images/group_coding.jpg") no-repeat center center`,
     backgroundSize: 'cover',
+    textAlign: 'right',
+    padding: '4rem 5% 1rem 40%',
   },
   slide3: {
     background: `linear-gradient(rgba(0, 0, 80, 0.5), rgba(0, 0, 180, 0.5)),
@@ -42,6 +51,12 @@ const styles = {
     background: `linear-gradient(rgba(0, 0, 80, 0.5), rgba(0, 0, 180, 0.5)),
       url("/static/images/whiteboard.jpg") no-repeat center center`,
     backgroundSize: 'cover',
+    textAlign: 'right',
+    padding: '4rem 5% 1rem 40%',
+  },
+  ctaButton: {
+    fontSize: '2rem',
+    padding: '1rem 4rem',
   },
 };
 
@@ -51,7 +66,7 @@ class HeroCarousel extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.root}>
+      <div className={classes.container}>
         <Carousel
           renderCenterLeftControls={({ previousSlide }) => (
             <IconButton
@@ -74,22 +89,51 @@ class HeroCarousel extends React.Component {
         >
           <div className={`${classes.slide} ${classes.slide1}`}>
             <h1>Join us and start learning deep learning</h1>
-            <p>jasfdl;kaslkdfjl</p>
-            <Button variant="raised" color="secondary" size="large">
+            <p>Get access to all our tutorials!</p>
+            <Button
+              className={classes.ctaButton}
+              variant="raised"
+              color="secondary"
+              size="large"
+            >
               Join Us Now!
             </Button>
           </div>
           <div className={`${classes.slide} ${classes.slide2}`}>
             <h1>We are here to help each other learn deep learning</h1>
-            <p>some text</p>
+            <p>Get your custom portfolio page!</p>
+            <Button
+              className={classes.ctaButton}
+              variant="raised"
+              color="secondary"
+              size="large"
+            >
+              Join Us Now!
+            </Button>
           </div>
           <div className={`${classes.slide} ${classes.slide3}`}>
             <h1>Let&apos;s learn deep learning together!</h1>
-            <p>some text</p>
+            <p>Participate in our weekly masterminds!</p>
+            <Button
+              className={classes.ctaButton}
+              variant="raised"
+              color="secondary"
+              size="large"
+            >
+              Join Us Now!
+            </Button>
           </div>
           <div className={`${classes.slide} ${classes.slide4}`}>
             <h1>We are the deep learning community</h1>
-            <p>some text</p>
+            <p>Get expert help from other members!</p>
+            <Button
+              className={classes.ctaButton}
+              variant="raised"
+              color="secondary"
+              size="large"
+            >
+              Join Us Now!
+            </Button>
           </div>
         </Carousel>
       </div>
