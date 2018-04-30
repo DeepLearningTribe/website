@@ -12,6 +12,11 @@
     "test": "NODE_ENV=test jest"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-11",
+    "@fortawesome/free-brands-svg-icons": "^5.1.0-8",
+    "@fortawesome/free-regular-svg-icons": "^5.1.0-8",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-8",
+    "@fortawesome/react-fontawesome": "0.1.0-9",
     "@material-ui/icons": "^1.0.0-beta.43",
     "classnames": "^2.2.5",
     "eslint-config-prettier": "^2.9.0",
