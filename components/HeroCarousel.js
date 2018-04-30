@@ -6,6 +6,7 @@ import ChevronRight from '@material-ui/icons/ChevronRight';
 import ChevronLeft from '@material-ui/icons/ChevronLeft';
 import { withStyles } from 'material-ui/styles';
 import Button from 'material-ui/Button';
+import Typography from 'material-ui/Typography';
 
 const styles = {
   container: {
@@ -29,6 +30,15 @@ const styles = {
   },
   slideText: {
     marginTop: '100px',
+  },
+  title: {
+    fontSize: '2.5rem',
+    marginBottom: '2rem',
+    marginTop: '2rem',
+  },
+  subtitle: {
+    fontSize: '1.8rem',
+    marginBottom: '2rem',
   },
   slide1: {
     background: `linear-gradient(rgba(0, 0, 80, 0.5), rgba(0, 0, 180, 0.5)),
@@ -88,53 +98,97 @@ class HeroCarousel extends React.Component {
           )}
         >
           <div className={`${classes.slide} ${classes.slide1}`}>
-            <h1>Join us and start your deep learning journey</h1>
-            <p>
+            <Typography
+              className={classes.title}
+              variant="headline"
+              color="inherit"
+            >
+              Join us and start your deep learning journey
+            </Typography>
+            <Typography
+              className={classes.subtitle}
+              variant="subheading"
+              color="inherit"
+            >
               Our free membership provides access to all our tutorials, slack
               channel and events for free!
-            </p>
+            </Typography>
             <Button
               className={classes.ctaButton}
               variant="raised"
-              color="secondary"
+              color="primary"
               size="large"
             >
               Join Us Now For Free!
             </Button>
           </div>
           <div className={`${classes.slide} ${classes.slide2}`}>
-            <h1>We are here to help each other learn deep learning</h1>
-            <p>
+            <Typography
+              className={classes.title}
+              variant="headline"
+              color="inherit"
+            >
+              We are here to help each other learn deep learning
+            </Typography>
+            <Typography
+              className={classes.subtitle}
+              variant="subheading"
+              color="inherit"
+            >
               Become a premium member and get your own custom portfolio page!
-            </p>
+            </Typography>
             <Button
               className={classes.ctaButton}
               variant="raised"
-              color="secondary"
+              color="primary"
               size="large"
             >
               Join Us Now!
             </Button>
           </div>
           <div className={`${classes.slide} ${classes.slide3}`}>
-            <h1>Let&apos;s learn deep learning together!</h1>
-            <p>Participate in our weekly masterminds!</p>
+            <Typography
+              className={classes.title}
+              variant="headline"
+              color="inherit"
+            >
+              Let&apos;s learn deep learning together!
+            </Typography>
+            <Typography
+              className={classes.subtitle}
+              variant="subheading"
+              color="inherit"
+            >
+              Participate in our weekly masterminds!
+            </Typography>
             <Button
               className={classes.ctaButton}
               variant="raised"
-              color="secondary"
+              color="primary"
               size="large"
             >
               Join Us Now!
             </Button>
           </div>
           <div className={`${classes.slide} ${classes.slide4}`}>
-            <h1>We are the deep learning community</h1>
-            <p>Get expert help from other members!</p>
+            <Typography
+              className={classes.title}
+              variant="headline"
+              color="inherit"
+            >
+              We are the deep learning community
+            </Typography>
+            <Typography
+              className={classes.subtitle}
+              variant="subheading"
+              color="inherit"
+            >
+              Get expert help from other members!
+            </Typography>
             <Button
               className={classes.ctaButton}
               variant="raised"
-              color="secondary"
+              color="primary"
               size="large"
             >
               Join Us Now!
