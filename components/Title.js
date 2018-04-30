@@ -17,6 +17,7 @@ const styles = () => ({
     opacity: 0.1,
     paddingLeft: '1rem',
     userSelect: 'none',
+    textAlign: 'left',
   },
 });
 
