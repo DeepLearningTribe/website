@@ -7,3 +7,4 @@ export { default as Title } from './Title';
 export { default as IconCard } from './IconCard';
 export { default as PlanSelector } from './PlanSelector';
 export { default as PlanCard } from './PlanCard';
+export { default as Layout } from './Layout';
