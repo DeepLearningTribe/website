@@ -10,22 +10,17 @@ import {
   faCodeBranch,
   faGraduationCap,
 } from '@fortawesome/free-solid-svg-icons';
-import withRoot from '../src/withRoot';
 import {
   Newsletter,
   HeroCarousel,
-  Navbar,
   Footer,
   Block,
   Title,
   IconCard,
+  Layout,
 } from '../components';
 
 const styles = () => ({
-  container: {
-    fontFamily: "'Lato', sans-serif",
-    textAlign: 'justify',
-  },
   block1: {
     padding: '80px 10px',
   },
@@ -74,8 +69,7 @@ class Index extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.container}>
-        <Navbar />
+      <Layout>
         <HeroCarousel />
         <Block className={classes.block1}>
           <Grid container spacing={16}>
@@ -172,17 +166,15 @@ class Index extends React.Component {
           onClick={this.onNewsletterButtonClick}
         />
         <Footer />
-      </div>
+      </Layout>
     );
   }
 }
 
 Index.propTypes = {
   classes: PropTypes.shape({
-    classes: PropTypes.shape({
-      container: PropTypes.string.isRequired,
-    }).isRequired,
+    container: PropTypes.string.isRequired,
   }).isRequired,
 };
 
-export default withRoot(withStyles(styles)(Index));
+export default withStyles(styles)(Index);
