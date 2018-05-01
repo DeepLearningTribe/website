@@ -37,8 +37,9 @@ export function Title({ classes, className, children }) {
 Title.propTypes = {
   children: PropTypes.node.isRequired,
   classes: PropTypes.shape({
-    container: PropTypes.shape({}).isRequired,
-    innerContainer: PropTypes.shape({}).isRequired,
+    container: PropTypes.string.isRequired,
+    main: PropTypes.string.isRequired,
+    shadow: PropTypes.string.isRequired,
   }).isRequired,
   className: PropTypes.string,
 };
