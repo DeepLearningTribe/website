@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
-import { Block } from './';
 import { Typography } from 'material-ui';
+import { Block } from './';
 
 const styles = ({ palette }) => ({
   container: {
     flex: 1,
-    backgroundColor: console.log(palette) || palette.grey[200],
+    backgroundColor: palette.grey[200],
     padding: '50px 0',
   },
 });
