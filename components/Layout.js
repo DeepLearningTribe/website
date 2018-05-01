@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
-import withRoot from '../src/withRoot';
 import { Navbar } from './';
 
 const styles = () => ({
@@ -25,4 +24,4 @@ Layout.propTypes = {
   classes: PropTypes.shape({}).isRequired,
 };
 
-export default withRoot(withStyles(styles)(Layout));
+export default withStyles(styles)(Layout);
