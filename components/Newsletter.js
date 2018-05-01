@@ -108,7 +108,12 @@ export function Newsletter({
 }
 
 Newsletter.propTypes = {
-  classes: PropTypes.string.isRequired,
+  classes: PropTypes.shape({
+    outerContainer: PropTypes.string.isRequired,
+    innerContainer: PropTypes.string.isRequired,
+    successContainer: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  }).isRequired,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   onClick: PropTypes.func.isRequired,
