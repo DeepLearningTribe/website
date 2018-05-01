@@ -25,8 +25,8 @@ export function Block({ classes, children, className }) {
 Block.propTypes = {
   children: PropTypes.node.isRequired,
   classes: PropTypes.shape({
-    container: PropTypes.shape({}).isRequired,
-    innerContainer: PropTypes.shape({}).isRequired,
+    container: PropTypes.string.isRequired,
+    innerContainer: PropTypes.string.isRequired,
   }).isRequired,
   className: PropTypes.string,
 };
