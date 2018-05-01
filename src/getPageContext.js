@@ -10,7 +10,11 @@ import red from 'material-ui/colors/red';
 // It's optional.
 const themeSettings = {
   palette: {
-    primary: lightBlue,
+    primary: {
+      light: lightBlue[400],
+      main: lightBlue[600],
+      dark: lightBlue[800],
+    },
     secondary: yellow,
     error: red,
     contrastThreshold: 2,
