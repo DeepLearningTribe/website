@@ -37,11 +37,9 @@ export function Navbar({ classes }) {
 
 Navbar.propTypes = {
   classes: PropTypes.shape({
-    classes: PropTypes.shape({
-      container: PropTypes.string.isRequired,
-      flex: PropTypes.string.isRequired,
-      menuButton: PropTypes.string.isRequired,
-    }).isRequired,
+    container: PropTypes.string.isRequired,
+    flex: PropTypes.string.isRequired,
+    menuButton: PropTypes.string.isRequired,
   }).isRequired,
 };
 
