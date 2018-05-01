@@ -38,8 +38,11 @@ function withRoot(Component) {
   }
 
   WithRoot.propTypes = {
-    // eslint-disable-next-line react/forbid-prop-types
-    pageContext: PropTypes.object.isRequired,
+    pageContext: PropTypes.shape({}),
+  };
+
+  WithRoot.defaultProps = {
+    pageContext: undefined,
   };
 
   WithRoot.getInitialProps = ctx => {
