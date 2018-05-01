@@ -8,7 +8,7 @@ import Paper from 'material-ui/Paper';
 
 const styles = ({ palette }) => ({
   container: {
-    padding: '2rem',
+    padding: '1.1rem',
   },
   icon: {
     color: palette.primary[500],
