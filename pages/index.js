@@ -10,6 +10,7 @@ import {
   faCodeBranch,
   faGraduationCap,
 } from '@fortawesome/free-solid-svg-icons';
+import withRoot from '../src/withRoot';
 import {
   Newsletter,
   HeroCarousel,
@@ -173,8 +174,12 @@ class Index extends React.Component {
 
 Index.propTypes = {
   classes: PropTypes.shape({
-    container: PropTypes.string.isRequired,
+    block1: PropTypes.string.isRequired,
+    block2: PropTypes.string.isRequired,
+    image1: PropTypes.string.isRequired,
+    image2: PropTypes.string.isRequired,
+    iconCard1: PropTypes.string.isRequired,
   }).isRequired,
 };
 
-export default withStyles(styles)(Index);
+export default withRoot(withStyles(styles)(Index));
