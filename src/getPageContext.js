@@ -17,7 +17,7 @@ const themeSettings = {
     tonalOffset: 0.2,
   },
   typography: {
-    fontSize: 20,
+    fontSize: 18,
   },
 };
 
