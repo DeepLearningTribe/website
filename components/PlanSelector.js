@@ -81,7 +81,7 @@ export function PlanSelector({ className }) {
             </ListItem>
           </List>
           <Button variant="raised" color="primary" fullWidth>
-            Select Class C
+            Select Class B
           </Button>
         </PlanCard>
       </Grid>
