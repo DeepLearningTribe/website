@@ -7,6 +7,7 @@ import ChevronLeft from '@material-ui/icons/ChevronLeft';
 import { withStyles } from 'material-ui/styles';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
+import Link from 'next/link';
 
 const styles = {
   container: {
@@ -113,14 +114,16 @@ class HeroCarousel extends React.Component {
               Our free membership provides access to all our tutorials, slack
               channel and events for free!
             </Typography>
-            <Button
-              className={classes.ctaButton}
-              variant="raised"
-              color="primary"
-              size="large"
-            >
-              Join Us Now For Free!
-            </Button>
+            <Link href="/signup" prefetch>
+              <Button
+                className={classes.ctaButton}
+                variant="raised"
+                color="primary"
+                size="large"
+              >
+                Join Us Now For Free!
+              </Button>
+            </Link>
           </div>
           <div className={`${classes.slide} ${classes.slide2}`}>
             <Typography
@@ -137,14 +140,16 @@ class HeroCarousel extends React.Component {
             >
               Become a premium member and get your own custom portfolio page!
             </Typography>
-            <Button
-              className={classes.ctaButton}
-              variant="raised"
-              color="primary"
-              size="large"
-            >
-              Join Us Now!
-            </Button>
+            <Link href="/signup" prefetch>
+              <Button
+                className={classes.ctaButton}
+                variant="raised"
+                color="primary"
+                size="large"
+              >
+                Join Us Now!
+              </Button>
+            </Link>
           </div>
           <div className={`${classes.slide} ${classes.slide3}`}>
             <Typography
@@ -161,14 +166,16 @@ class HeroCarousel extends React.Component {
             >
               Participate in our weekly masterminds!
             </Typography>
-            <Button
-              className={classes.ctaButton}
-              variant="raised"
-              color="primary"
-              size="large"
-            >
-              Join Us Now!
-            </Button>
+            <Link href="/signup" prefetch>
+              <Button
+                className={classes.ctaButton}
+                variant="raised"
+                color="primary"
+                size="large"
+              >
+                Join Us Now!
+              </Button>
+            </Link>
           </div>
           <div className={`${classes.slide} ${classes.slide4}`}>
             <Typography
@@ -185,14 +192,16 @@ class HeroCarousel extends React.Component {
             >
               Get expert help from other members!
             </Typography>
-            <Button
-              className={classes.ctaButton}
-              variant="raised"
-              color="primary"
-              size="large"
-            >
-              Join Us Now!
-            </Button>
+            <Link href="/signup" prefetch>
+              <Button
+                className={classes.ctaButton}
+                variant="raised"
+                color="primary"
+                size="large"
+              >
+                Join Us Now!
+              </Button>
+            </Link>
           </div>
         </Carousel>
       </div>
