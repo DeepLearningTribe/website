@@ -5,9 +5,6 @@ import Typography from 'material-ui/Typography';
 import { IconCard } from './';
 
 const styles = () => ({
-  container: {
-    flex: 1,
-  },
   price: {
     textAlign: 'center',
   },
