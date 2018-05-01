@@ -52,11 +52,14 @@ export function IconCard({ classes, className, children, title, icon }) {
 IconCard.propTypes = {
   children: PropTypes.node.isRequired,
   classes: PropTypes.shape({
-    container: PropTypes.shape({}).isRequired,
-    innerContainer: PropTypes.shape({}).isRequired,
+    container: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    iconContainer: PropTypes.string.isRequired,
+    iconBackground: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
   }).isRequired,
   title: PropTypes.string.isRequired,
-  icon: PropTypes.node.isRequired,
+  icon: PropTypes.shape({}).isRequired,
   className: PropTypes.string,
 };
 
