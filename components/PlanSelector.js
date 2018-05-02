@@ -80,8 +80,8 @@ export function PlanSelector({ className }) {
               <ListItemText inset primary="Mastermind sessions" />
             </ListItem>
           </List>
-          <Button variant="raised" color="primary" fullWidth>
-            Select Class B
+          <Button variant="raised" color="primary" fullWidth disabled>
+            Comming Soon!
           </Button>
         </PlanCard>
       </Grid>
@@ -107,8 +107,8 @@ export function PlanSelector({ className }) {
               <ListItemText inset primary="Mentorship" />
             </ListItem>
           </List>
-          <Button variant="raised" color="primary" fullWidth>
-            Select Class A
+          <Button variant="raised" color="primary" fullWidth disabled>
+            Comming Soon!
           </Button>
         </PlanCard>
       </Grid>
