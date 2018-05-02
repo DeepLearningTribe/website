@@ -8,7 +8,7 @@ import Button from 'material-ui/Button';
 
 const styles = {
   container: {
-    flexGrow: 1,
+    flex: '0 0 auto',
   },
   flex: {
     flex: 1,

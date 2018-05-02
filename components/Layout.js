@@ -7,6 +7,9 @@ const styles = () => ({
   container: {
     fontFamily: "'Lato', sans-serif",
     textAlign: 'justify',
+    minHeight: '100vh',
+    display: 'flex',
+    flexFlow: 'column nowrap',
   },
 });
 
