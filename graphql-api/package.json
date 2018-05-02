@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./index.js --exec babel-node -e js",
+    "build": "webpack -p",
+    "start": "node build/index.js",
+    "test": "jest"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "David C <david@mokahaiku.com>",
+  "license": "UNLICENSED",
   "dependencies": {
+    "apollo-engine": "^1.1.0",
     "apollo-server-express": "^1.3.6",
     "body-parser": "^1.18.2",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "graphql": "^0.13.2",
     "graphql-tools": "^3.0.0",
