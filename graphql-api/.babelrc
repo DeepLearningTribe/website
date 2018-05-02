@@ -1,0 +1,13 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": { "node": "current", "es2015": true },
+        "useBuiltIns": true
+      }
+    ]
+  ],
+  "plugins": ["transform-class-properties", "transform-object-rest-spread"]
+}
+
