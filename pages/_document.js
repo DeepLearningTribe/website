@@ -32,6 +32,9 @@ class MyDocument extends Document {
           />
           <style global jsx>
             {`
+              body {
+                margin: 0;
+              }
               img {
                 max-width: 100%;
               }
